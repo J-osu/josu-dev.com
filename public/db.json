@@ -1,0 +1,48 @@
+{
+  "projects": [
+    {
+      "id": "1",
+      "title": "Portfolio Personal",
+      "shortDescription": "Mi portfolio personal desarrollado con SpringBoot",
+      "detailedDescription": "Un portfolio que muestra mis habilidades y proyectos. Desarrollado con SpringBoot y Bootstrap.",
+      "technologies": ["SpringBoot", "HTML5", "Bootstrap", "CSS3"],
+      "image": "/images/porfolio-spring.png",
+      "githubLink": "https://github.com/J-osu/Porfolio-SpringBoot",
+      "features": ["Diseño responsivo", "Animaciones CSS"],
+      "challenges": "Hacer un porfolio completo en SpringBoot"
+    },
+    {
+      "id": "2",
+      "title": "E-commerce",
+      "shortDescription": "Plataforma de comercio electrónico con carrito de compras",
+      "detailedDescription": "Sistema completo de e-commerce con autenticación de usuarios, carrito de compras. Desarrollado con SpringBoot, React, Node.js.",
+      "technologies": ["React", "Node.js", "SpringBoot", "MySQL", "Bootstrap"],
+      "image": "/images/pccomponentes.png",
+      "githubLink": "https://github.com/tuusuario/ecommerce",
+      "features": ["Carrito de compras", "Filtrado de productos"],
+      "challenges": "Sincronizar el estado del carrito entre sesiones"
+    },
+    {
+      "id": "3",
+      "title": "Video juego",
+      "shortDescription": "Creación del mítico video juego del Tetris",
+      "detailedDescription": "Un juego invreible y mítico con colisiones entre bloques, sonidos, animaciones, puntuaciones. Desarrollado con JavaScript, HTML5 y CSS.",
+      "technologies": ["HTML5", "CSS3", "JavaScript"],
+      "image": "/images/img-tetris.jpg",
+      "githubLink": "https://github.com/J-osu/Tetris",
+      "features": ["Colisiones entre bloques", "Sonidos", "Animaciones"],
+      "challenges": "Las colisiones de las figuras así como su creación correcta y su posicionamiento en el canvas"
+    },
+    {
+      "id": "4",
+      "title": "Poke-Api",
+      "shortDescription": "Creación de una api que devuelve datos de pokemones",
+      "detailedDescription": "Api que devuelve datos de pokemones desde la 1mera generación hasat la 3cera. Desarrollado con Node.js, React, JavaScript y CSS",
+      "technologies": ["Node.js", "React", "JavaScript", "CSS"],
+      "image": "/images/poke-api.png",
+      "githubLink": "https://github.com/J-osu/poke-api",
+      "features": ["Muestreo de pokemones"],
+      "challenges": "Ninguno"
+    }
+  ]
+}

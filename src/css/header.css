@@ -1,0 +1,118 @@
+:root {
+  --dark-bg: #212529;       /* Color de fondo */
+  --accent-color: #61dafb;  /* Color de hover/active (azul claro) */
+  --text-light: #ffffff;    /* Texto blanco */
+  --circle-bg: #343a40;     /* Fondo del círculo del logo */
+}
+
+/* Estilos generales del Navbar */
+.fixed-navbar {
+  background-color: #212529 !important; /* Mismo bg-dark que el footer */
+  padding: 0.5rem 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  z-index: 1030;
+}
+
+/* Contenedor del logo */
+.navbar-brand-custom {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin-right: 1rem;
+}
+
+/* Estilo del logo */
+.navbar-logo {
+  width: 50px; /* Tamaño aumentado */
+  height: 50px;
+  border-radius: 50%; /* Fondo redondo */
+  object-fit: contain;
+  background-color: #cad7e4; /* Fondo del círculo */
+  padding: 5px;
+  border: 2px solid #61dafb; /* Color de acento como el hover de iconos */
+  transition: all 0.3s ease;
+}
+
+.navbar-logo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(97, 218, 251, 0.5);
+}
+
+/* Texto del brand (si lo usas en el futuro) */
+.brand-text {
+  color: white;
+  font-weight: bold;
+  margin-left: 10px;
+  font-size: 1.2rem;
+}
+
+/* Botón toggle en móvil */
+.navbar-toggle-custom {
+  border-color: rgba(97, 218, 251, 0.5);
+}
+
+.navbar-toggle-custom:focus {
+  box-shadow: 0 0 5px #61dafb;
+}
+
+/* Items del menú */
+.navbar-links {
+  gap: 1rem;
+}
+
+.nav-link-custom {
+  color: #ffffff !important;
+  font-weight: 500;
+  padding: 0.5rem 1rem !important;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* Efecto hover y active */
+.nav-link-custom:hover,
+.nav-link-custom.active {
+  color: #61dafb !important;
+}
+
+.nav-link-custom:hover::after,
+.nav-link-custom.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 2px;
+  background-color: #61dafb;
+}
+
+/* Menú colapsado en móviles */
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+/* Responsive para móviles */
+@media (max-width: 992px) {
+  .fixed-navbar {
+    padding: 0.5rem 1rem;
+  }
+  
+  .navbar-logo {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .navbar-links {
+    padding: 1rem 0;
+    gap: 0.5rem;
+  }
+  
+  .nav-link-custom {
+    padding: 0.5rem !important;
+  }
+  
+  .nav-link-custom::after {
+    display: none;
+  }
+}

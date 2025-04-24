@@ -1,0 +1,477 @@
+:root {
+    --bg-color-inicio: #2c1a47;
+    --text-color-inicio: #9b9bc8;
+    --main-color-inicio: #6a0dad;
+    --second-color-inicio: #fd9e23;
+    --tercer-color-inicio: #bd7313;
+    --bg-color-inicio2: #090324;
+    --text-color-inicio2: #003b54;
+    --bt-color3: #6a67ce;
+    --bt-color4: #ffab40;
+    --big-font: 6.6rem;
+    --p-font: 1rem;
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  body, html {
+    background: linear-gradient(135deg, var(--bg-color-inicio2), var(--text-color-inicio2));
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: auto !important;
+    touch-action: pan-y !important;
+  }
+  
+  main {
+    flex: 1;
+    overflow-y: auto;
+    min-height: 92vh !important;
+  }
+  
+  section {
+    padding-top: 110px;
+  }
+
+  .home {
+    padding-top: 200px;
+  }
+  
+  .cara-con-manos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+    margin-top: 0px;
+    text-decoration: none;
+    overflow: visible;
+  }
+  
+  .cara {
+    position: relative;
+    text-align: center;
+    color: var(--second-color-inicio);
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+  
+  .ojos {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .ojo1, .ojo2 {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: var(--text-color-inicio);
+    border: 5px solid #6a0dad;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: transform 0.2s ease;
+  }
+  
+  .ojo1:hover, .ojo2:hover {
+    transform: scale(1.05);
+  }
+  
+  .pupila {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: #3b2061;
+    border-radius: 50%;
+    transition: 
+      transform 0.1s linear,
+      width 0.3s ease,
+      height 0.3s ease;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 
+      inset 0 0 10px rgba(0, 0, 0, 0.5),
+      0 0 15px rgba(59, 32, 97, 0.7);
+  }
+  
+  /* Efecto de brillo en la pupila */
+  .pupila::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    top: 15px;
+    left: 10px;
+  }
+  
+  /* Efecto cuando se toca/clica */
+  .ojo1:active .pupila, 
+  .ojo2:active .pupila {
+    width: 45px;
+    height: 45px;
+  }
+  
+  
+  .btn-14 {
+    border: 0 solid;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    background-color: var(--bt-color3);
+    color: var(--bt-color3);
+    cursor: pointer;
+    font-size: 100%;
+    font-weight: 900;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+  }
+  
+  .btn-14 {
+    border-radius: 100rem;
+    border-width: 2px;
+    overflow: hidden;
+    padding: 0.8rem 1rem;
+    position: relative;
+    transition: 0.2s ease,  0.2s ease;
+    }
+    .btn-14 span {
+    mix-blend-mode: difference;
+    }
+    .btn-14:hover {
+    transform: translateY(-4px);
+    will-change: box-shadow, transform;
+    box-shadow: 0 20px 100px 1px var(--bt-color4);
+    }
+
+  .cv {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .cv a {
+    text-decoration: none;
+  }
+  
+  .boca {
+    background-color: var(--second-color-inicio);
+    width: 250px;
+    height: 100px;
+    border-radius: 0 0 300px 300px;
+    margin: 0 auto;
+    position: absolute;
+    padding-top: 20px;
+    transition: height 0.3s ease;
+  }
+  
+  .nombre h1 {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0px 0 5px 0;
+    transition: opacity 0.3s ease;
+    color: var(--bg-color-inicio);
+  }
+  
+  .description h4 {
+    color: var(--bg-color-inicio);
+    padding: 2px 3px;
+    border-radius: 5px;
+    transition: opacity 0.3s ease;
+    font-size: 15px;
+  }
+  
+  .cv:hover ~ .boca {
+    height: 20px;
+  }
+  
+  .cv:hover ~ .boca .nombre h1,
+  .cv:hover ~ .boca .description h4 {
+    opacity: 0;
+  }
+  
+  .Mano {
+    position: relative;
+    width: 120px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  
+  .Palma {
+    width: 90px;
+    height: 75px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: var(--second-color-inicio);
+    color: var(--tercer-color-inicio);
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 75px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .Palma:hover {
+    background-color: var(--tercer-color-inicio);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  .Palma a {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .dedos {
+    width: 20px;
+    height: 60px;
+    background-color: var(--second-color-inicio);
+    border-radius: 10px;
+    position: absolute;
+    text-align: center;
+  }
+  
+  .dedo1 {
+    top: -40px;
+    left: 10px;
+  }
+  
+  .dedo2 {
+    top: -45px;
+    left: 30px;
+  }
+  
+  .dedo3 {
+    top: -45px;
+    left: 50px;
+  }
+  
+  .dedo4 {
+    top: -40px;
+    left: 70px;
+  }
+  
+  .pulgar {
+    width: 25px;
+    height: 50px;
+    background-color: var(--second-color-inicio);
+    border-radius: 15px;
+    position: absolute;
+    bottom: 10px;
+    right: -20px;
+    transform-origin: bottom center;
+    animation: 2s infinite ease-in-out;
+  }
+  
+  .mano-izquierda .Palma {
+    transform: scaleX(-1);
+    text-align: right;
+  }
+  
+  .mano-derecha .Palma {
+    transform: scaleX(1);
+  }
+  
+  @keyframes abrirCerrar {
+    0%, 100% {
+      transform: rotate(0deg) translateY(0);
+    }
+    50% {
+      transform: rotate(30deg) translateY(20px);
+    }
+  }
+  
+  .dedos {
+    width: 20px;
+    height: 60px;
+    background-color: var(--second-color-inicio);
+    border-radius: 10px;
+    position: absolute;
+    transform-origin: bottom center;
+    animation: abrirCerrar 2s infinite ease-in-out;
+  }
+  
+  .pulgar {
+    width: 25px;
+    height: 50px;
+    background-color: var(--second-color-inicio);
+    border-radius: 15px;
+    position: absolute;
+    bottom: 10px;
+    right: -20px;
+    transform-origin: bottom center;
+    animation: abrirCerrar 2s infinite ease-in-out;
+  }
+  
+  .dedo1 {
+    top: -40px;
+    left: 10px;
+    animation-delay: 0.1s;
+  }
+  
+  .dedo2 {
+    top: -45px;
+    left: 30px;
+    animation-delay: 0.2s;
+  }
+  
+  .dedo3 {
+    top: -45px;
+    left: 50px;
+    animation-delay: 0.3s;
+  }
+  
+  .dedo4 {
+    top: -40px;
+    left: 70px;
+    animation-delay: 0.4s;
+  }
+  
+  .thumb {
+    animation-delay: 0.5s;
+  }
+  
+  .mano-izquierda {
+    transform: scaleX(-1);
+  }
+  
+  .mano-derecha {
+    transform: scaleX(1);
+  }
+  
+  .mano-izquierda .botoP {
+    transform: scaleX(-1);
+  }
+
+  @media (max-width: 1024px) {
+    .cara-con-manos {
+      gap: 150px;
+    }
+  
+    .ojos {
+      gap: 30px;
+    }
+  
+    .ojo1, .ojo2 {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .pupila {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .boca {
+      width: 200px;
+      height: 80px;
+    }
+  
+    .nombre h1 {
+      font-size: 20px;
+    }
+  
+    .description h4 {
+      font-size: 12px;
+      
+      top: -50px
+    }
+  }
+  
+
+@media (max-width: 768px) {
+    .cara-con-manos {
+      gap: 10px;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .Mano {
+      display: none !important;
+    }
+  
+    .ojos {
+      gap: 30px;
+    }
+  
+    .ojo1, .ojo2 {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .pupila {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .boca {
+      width: 180px;
+      height: 90px;
+    }
+  
+    .nombre h1 {
+      font-size: 24px;
+    }
+  
+    .description h4 {
+      font-size: 14px;
+    }
+  }
+  
+
+  @media (max-width: 480px) {
+    .ojos {
+      gap: 15px;
+    }
+  
+    .ojo1, .ojo2 {
+      width: 70px;
+      height: 70px;
+    }
+  
+    .pupila {
+      width: 35px;
+      height: 35px;
+    }
+  
+    .boca {
+      width: 150px;
+      height: 85px;
+    }
+  
+    .nombre h1 {
+      font-size: 20px;
+    }
+  
+    .description h4 {
+      font-size: 12px;
+    }
+  }

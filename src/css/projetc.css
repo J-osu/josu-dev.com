@@ -1,0 +1,29 @@
+:root {
+  --cardcolor: #cbfdff;
+}
+
+.project {
+    margin-top: 72px !important;
+    background-color: aliceblue !important;
+  }
+.color-project{
+  background: transparent !important;
+}
+
+.project h2{
+    text-align: center !important;
+    font-size: 34px !important;
+    color: aqua;
+}
+
+.project .card{
+  background: var(--cardcolor) !important;
+  border: none !important;
+  border-radius: 8px !important;
+  transition: all 0.3s ease;
+  height: 100%;
+  overflow: hidden;
+  /* Nuevos estilos compactos: */
+  max-width: 320px; /* Ancho máximo reducido */
+  margin: 0 auto; /* Centrado horizontal */
+}

@@ -1,0 +1,84 @@
+/* Estilos para la línea de tiempo */
+.timeline-vertical {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .timeline {
+    position: relative;
+    padding-left: 50px;
+  }
+  
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 25px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #007bff;
+  }
+  
+  .timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+    align-items: center;
+  }
+  
+  .timeline-icon {
+    position: absolute;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #e8cc8dfa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+  }
+  
+  .timeline-content {
+    padding-left: 70px;
+    background-color: #e3eff9;
+    border-radius: 10px;
+    width: 100%;
+    height: 150px;
+    align-items: center;
+  }
+  .timeline-content h5{
+    font-size: 32px;
+    color: #007bff;
+  }
+  .timeline-content p{
+    color: #1d1e20;
+  }
+  /* Estilos para las barras de habilidades */
+  .skill-bar {
+    margin-bottom: 20px;
+  }
+  
+  .skill-bar span {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  /* Estilos generales */
+  .encab {
+    color: #f9e1f6;
+    font-weight: bold;
+  }
+  
+  .txt-p {
+    color: #ebded8;
+  }
+  
+  .c-carta {
+    background-color: #e8dfdf;
+  }
+  
+  .icon {
+    vertical-align: middle;
+  }
