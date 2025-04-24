@@ -18,7 +18,7 @@ const Footer = () => {
         <Nav.Link href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
           <FaLinkedin className="social-icon" />
         </Nav.Link>
-        <Nav.Link href="https://github.com/" target="_blank" rel="noopener noreferrer">
+        <Nav.Link href="https://github.com/J-osu" target="_blank" rel="noopener noreferrer">
           <FaGithub className="social-icon" />
         </Nav.Link>
         <Nav.Link href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
