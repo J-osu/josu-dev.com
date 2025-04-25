@@ -105,60 +105,9 @@
   }
 }
 
-
-@media (min-width: 481px) and (max-width: 992px) {
-  .skills-container {
-    padding: 0 1.5rem;
-  }
-
-  .section-main-title,
-  .section-title {
-    font-size: 1.6rem;
-    text-align: center;
-  }
-
-  .hard-skills-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.2rem;
-  }
-
-  .skill-tile {
-    padding: 12px;
-    font-size: 1rem;
-  }
-
-  .skill-icon {
-    max-width: 50px;
-  }
-
-  .skill-name {
-    font-size: 1rem;
-  }
-
-  .skill-progress-bar .progress-bar {
-    height: 7px;
-  }
-}
-
 @media (max-width: 480px) {
-  .skills-container {
-    padding: 0 1rem;
-  }
-
-  .section-main-title,
-  .section-title {
-    font-size: 1.4rem;
-    text-align: center;
-  }
-
   .hard-skills-grid {
     grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-
-  .skill-tile {
-    padding: 10px;
-    font-size: 0.9rem;
   }
 
   .skill-icon {
@@ -167,9 +116,5 @@
 
   .skill-name {
     font-size: 0.95rem;
-  }
-
-  .skill-progress-bar .progress-bar {
-    height: 6px;
   }
 }
