@@ -1,23 +1,17 @@
 .skills-container {
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
 }
 
 .section-main-title {
   color: #2c3e50;
   font-weight: 600;
   margin-top: 2rem;
-  text-align: center;
 }
 
 /* Hard Skills Grid */
 .hard-skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5rem;
   height: 100%;
-  margin-top: 2rem;
+  
 }
 
 .grid-stack {
@@ -35,18 +29,15 @@
   justify-content: center;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
-  background: white;
 }
 
 .skill-tile:hover {
   transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 .skill-icon {
   margin-bottom: 10px;
-  max-width: 60px;
-  height: auto;
 }
 
 .skill-name {
@@ -58,63 +49,27 @@
 /* Soft Skills Section */
 .soft-skills-section {
   height: 100%;
-  margin-top: 2rem;
 }
 
 .section-title {
   color: #2c3e50;
   font-weight: 500;
-  text-align: center;
-  margin-bottom: 1rem;
 }
 
 .skill-progress-bar .progress-bar {
   background: linear-gradient(90deg, #1cc88a, #13855c);
   height: 8px;
   border-radius: 4px;
-  width: 100%;
 }
+
 
 /* Responsive adjustments */
-@media (max-width: 992px) {
-  .skills-container {
-    padding: 0 1rem;
-  }
-
-  .skill-tile {
-    padding: 12px;
-  }
-
-  .skill-icon {
-    max-width: 50px;
-  }
-}
-
 @media (max-width: 768px) {
   .grid-stack {
     min-height: 200px;
   }
-
+  
   .skill-tile {
     padding: 10px;
-  }
-
-  .section-main-title,
-  .section-title {
-    font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .hard-skills-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .skill-icon {
-    max-width: 40px;
-  }
-
-  .skill-name {
-    font-size: 0.95rem;
   }
 }
