@@ -2,7 +2,6 @@
 .grid-stack {
   background: transparent;
   min-height: 400px;
-  margin: 0 -10px; /* Compensa el margen de los ítems */
 }
 
 .skill-tile {
