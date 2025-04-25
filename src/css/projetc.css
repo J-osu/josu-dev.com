@@ -1,29 +1,101 @@
 :root {
   --cardcolor: #cbfdff;
+  --text-color: #333;
+  --primary-accent: #00ffff; /* aqua */
+  --section-bg: aliceblue;
 }
 
-.project {
-    margin-top: 72px !important;
-    background-color: aliceblue !important;
-  }
-.color-project{
-  background: transparent !important;
+/* Estilos base para la sección de proyectos */
+.project-section {
+  margin-top: 72px;
+  background-color: var(--section-bg);
+  padding: 40px 0;
 }
 
-.project h2{
-    text-align: center !important;
-    font-size: 34px !important;
-    color: aqua;
+.project-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--primary-accent);
+  margin-bottom: 2rem;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.project .card{
-  background: var(--cardcolor) !important;
-  border: none !important;
-  border-radius: 8px !important;
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+  padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background: var(--cardcolor);
+  border: none;
+  border-radius: 8px;
   transition: all 0.3s ease;
   height: 100%;
   overflow: hidden;
-  /* Nuevos estilos compactos: */
-  max-width: 320px; /* Ancho máximo reducido */
-  margin: 0 auto; /* Centrado horizontal */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+/* Estilos para tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+  .project-section {
+    margin-top: 60px;
+    padding: 30px 0;
+  }
+  
+  .project-section h2 {
+    font-size: 2.2rem;
+  }
+  
+  .project-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  }
+}
+
+/* Estilos para móviles (menos de 768px) */
+@media (max-width: 768px) {
+  .project-section {
+    margin-top: 50px;
+    padding: 25px 15px;
+  }
+  
+  .project-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .project-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  .project-card {
+    max-width: 100%;
+  }
+}
+
+/* Pequeños móviles (menos de 480px) */
+@media (max-width: 480px) {
+  .project-section {
+    margin-top: 40px;
+    padding: 20px 10px;
+  }
+  
+  .project-section h2 {
+    font-size: 1.8rem;
+  }
 }
