@@ -62,14 +62,46 @@
   border-radius: 4px;
 }
 
-
 /* Responsive adjustments */
+@media (max-width: 992px) {
+  .skills-container {
+    padding: 0 1rem;
+  }
+
+  .skill-tile {
+    padding: 12px;
+  }
+
+  .skill-icon {
+    max-width: 50px;
+  }
+}
+
 @media (max-width: 768px) {
   .grid-stack {
     min-height: 200px;
   }
-  
+
   .skill-tile {
     padding: 10px;
+  }
+
+  .section-main-title,
+  .section-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hard-skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-icon {
+    max-width: 40px;
+  }
+
+  .skill-name {
+    font-size: 0.95rem;
   }
 }
