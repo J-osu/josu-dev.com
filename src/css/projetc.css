@@ -1,5 +1,8 @@
 :root {
   --cardcolor: #cbfdff;
+  --text-color: #333;
+  --primary-accent: #00ffff; /* aqua */
+  --section-bg: aliceblue;
 }
 
 .project {
@@ -26,4 +29,41 @@
   /* Nuevos estilos compactos: */
   max-width: 320px; /* Ancho máximo reducido */
   margin: 0 auto; /* Centrado horizontal */
+}
+
+
+/* Estilos para móviles (menos de 768px) */
+@media (max-width: 768px) {
+  .project-section {
+    margin-top: 50px;
+    padding: 25px 15px;
+  }
+  
+  .project-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .project-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  .project-card {
+    max-width: 100%;
+  }
+}
+
+/* Pequeños móviles (menos de 480px) */
+@media (max-width: 480px) {
+  .project-section {
+    margin-top: 40px;
+    padding: 20px 10px;
+  }
+  
+  .project-section h2 {
+    font-size: 1.8rem;
+  }
 }
